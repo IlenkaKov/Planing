@@ -1,7 +1,7 @@
 package ru.netology.Task;
 
 public class Epic extends Task {
-    protected String[] subtasks;
+    private String[] subtasks;
 
     public Epic(int id, String[] subtasks) {
         super(id);
@@ -18,8 +18,7 @@ public class Epic extends Task {
             if (subtask.contains(query)) {
                 return true;
             }
-            return false;
         }
         return false;
     }
-}
+    }
